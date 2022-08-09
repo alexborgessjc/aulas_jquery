@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 1 - JQuery</title>
+    <!-- Implementando o jquery via CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Implementando o jquery via local/baixado-->
+    <!-- <script src="jquery-3.6.0.min.js"></script>-->
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("p").hide();
+            });
+            $("#show").click(function(){
+                $("p").show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>Se clicar em "Esconder" botão, ele irá desaparecer.</p>
+
+    <button id="hide">Esconder</button>
+    <button id="show">mostrar</button>
+</body>
+</html>
