@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function exibirElemento(tag){
+				$(tag).show();
+			}
+			function esconderElemento(tag){
+				$(tag).hide();
+			}
+			function exibirElemento2(elementoP){
+				$('.'+elementoP).show();
+			}
+			function esconderElemento2(elementoP){
+				$('.'+elementoP).hide();
+			}						
+		</script>
+		<div>
+			Textos, imagens, tabelas...
+		</div>
+		<p class="elementoP">Aula de front-end</p>
+		<button onClick=exibirElemento('div')>Exibir div</button>
+		<button onClick=esconderElemento('div')> Esconder div</button>
+		<button onClick=exibirElemento2('elementoP')>Exibir p</button>
+		<button onClick=esconderElemento2('elementoP')>Esconder p</button>
+	</body>
+</html>
