@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>
+			Exercício 5
+		</title>	
+		<meta charset="utf-8">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(function(){
+				function clear(){
+					$("#paragrafo").removeClass("pequena")
+					.removeClass("grande");
+				}
+				$("#letraPequena").click(function(){
+					clear();
+					$("#paragrafo").addClass("pequena");
+				});
+				$("#letraGrande").click(function(){
+					clear();
+					$("#paragrafo").addClass("grande");
+				});
+			});
+		</script>
+		<style>
+			.pequena{
+				font-size: 0.7em;
+			}
+			.grande{
+				font-size: 3.0em;
+			}
+		</style>
+	</head>
+	<body>				
+		<button id="letraPequena">Clique aqui para diminuir a fonte</button>	
+		<button id="letraGrande">Clique aqui para aumentar a fonte</button>	
+		<p id="paragrafo">
+			orem ipsum dolor sit amet, consectetur adipiscing elit. Nulla porta eros 
+			dignissim viverra vehicula. Aliquam erat volutpat. Etiam congue pretium 
+			felis, eget faucibus orci faucibus non. Nulla at hendrerit nibh, 
+			eu pellentesque mi. Suspendisse eu odio ipsum. Sed nec metus fringilla, 
+			lobortis magna et, volutpat lacus. Vivamus aliquet, eros a lacinia 
+			suscipit, neque leo vehicula orci, dignissim sollicitudin ante ligula 
+			id orci. In ac ornare justo. Sed est libero, congue sit amet mauris ut, 
+			facilisis sodales massa. Suspendisse fringilla maximus risus, eleifend 
+			auctor nunc dignissim a. Nam a purus nec lorem tempus cursus et vitae magna. 
+			Praesent sed quam lacinia, laoreet libero eu, dictum elit. Nulla in erat odio. 
+			Phasellus sagittis nisl commodo, molestie ipsum vitae, placerat lectus.
+		</p>
+	</body>
+</html>
+
+
+

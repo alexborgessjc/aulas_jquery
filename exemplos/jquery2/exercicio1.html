@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>
+			Aula de Jquery
+		</title>	
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<script>
+			$(document).ready( function() {
+				$("#botao").click(function() {
+					$("p").first().css("font-style", "italic");
+				});
+			
+			});
+		</script>		
+		<p> Parágrafo de introdução </p>
+		<p> Parágrafo </p>
+		<p> Parágrafo de conclusão </p>		
+		<button id="botao">Altera primeiro parágrafo</button>
+	</body>
+</html>
+
+
+

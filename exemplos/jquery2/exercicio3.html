@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>
+			Exercício 3
+		</title>
+		<meta charset="utf-8">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<script>
+			$(document).ready( function() {
+				$("#crescente").click(function() {
+					var nomes = [];
+					$("#lista > li").each( function(index,elemento){
+						nomes.push(elemento.innerHTML);
+					});
+					nomes.sort();
+					$("#lista > li").each( function(index,elemento){
+						elemento.innerHTML = nomes[index];
+					});
+				});
+			
+				$("#decrescente").click(function() {
+					var nomes = [];
+					$("#lista > li").each( function(index,elemento){
+						nomes.push(elemento.innerHTML);
+					});
+					nomes.sort();
+					nomes.reverse();
+					$("#lista > li").each( function(index,elemento){
+						elemento.innerHTML = nomes[index];
+					});
+				});	
+			});
+		</script>
+		Lista de presença
+		<ul id="lista">
+			<li>Huguinho</li>
+			<li>Zezinho</li>
+			<li>Luizinho</li>
+		</ul>
+		<button id="crescente">Ordem crescente</button>
+		<button id="decrescente">Ordem decrescente</button>
+	</body>
+</html>
+
+
+

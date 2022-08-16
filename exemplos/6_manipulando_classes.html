@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+		<!-- NÃO DIGITAR - integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"-->
+	</head>
+	<body>
+		<script type="text/javascript">
+			function clear(tag){
+				$(tag).removeClass("colorir");			
+			}
+			function colorirElemento(tag){
+				$(tag).addClass("colorir");
+			}
+			function esconderElemento(tag){
+				clear(tag);
+			}
+		</script>
+		<style>
+			.colorir{
+			background-image: url("nfs.jpg");
+			}
+		</style>
+		<div>
+			Textos, imagens, tabelas...
+		</div>
+		<img src="nfs.jpg" width="200" height="150" onmouseover=colorirElemento(body) onmouseout=esconderElemento(body)>		
+	</body>
+</html>
